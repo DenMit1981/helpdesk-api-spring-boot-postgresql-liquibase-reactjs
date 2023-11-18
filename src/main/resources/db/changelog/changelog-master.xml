@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+         https://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.5.xsd"
+        logicalFilePath="db/changelog.xml">
+
+    <include file="changeset/001-user_id_seq.xml" relativeToChangelogFile="true"/>
+    <include file="changeset/002-ticket_id_seq.xml" relativeToChangelogFile="true"/>
+    <include file="changeset/003-attachment_id_seq.xml" relativeToChangelogFile="true"/>
+    <include file="changeset/004-comment_id_seq.xml" relativeToChangelogFile="true"/>
+    <include file="changeset/005-history_id_seq.xml" relativeToChangelogFile="true"/>
+    <include file="changeset/006-feedback_id_seq.xml" relativeToChangelogFile="true"/>
+    <include file="changeset/007-create-users.xml" relativeToChangelogFile="true"/>
+    <include file="changeset/008-create-ticket.xml" relativeToChangelogFile="true"/>
+    <include file="changeset/009-create-attachment.xml" relativeToChangelogFile="true"/>
+    <include file="changeset/010-create-comment.xml" relativeToChangelogFile="true"/>
+    <include file="changeset/011-create-history.xml" relativeToChangelogFile="true"/>
+    <include file="changeset/012-create-feedback.xml" relativeToChangelogFile="true"/>
+    <include file="changeset/013-insert-users.xml" relativeToChangelogFile="true"/>
+    <include file="changeset/014-insert-ticket.xml" relativeToChangelogFile="true"/>
+    <include file="changeset/015-insert-comment.xml" relativeToChangelogFile="true"/>
+    <include file="changeset/016-insert-history.xml" relativeToChangelogFile="true"/>
+</databaseChangeLog>
+

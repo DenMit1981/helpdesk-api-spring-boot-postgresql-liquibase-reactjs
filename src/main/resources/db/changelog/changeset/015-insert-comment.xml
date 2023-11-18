@@ -1,0 +1,40 @@
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.10.xsd">
+
+    <changeSet id="015-insert-comment" author="denmit">
+        <insert tableName="comment">
+            <column name="text" value="Oooooooo"/>
+            <column name="date" value="2022-02-01 23:15:30"/>
+            <column name="user_id" value="1"/>
+            <column name="ticket_id" value="1"/>
+        </insert>
+        <insert tableName="comment">
+            <column name="text" value="Heeellooo"/>
+            <column name="date" value="2022-03-03 21:12:17"/>
+            <column name="user_id" value="6"/>
+            <column name="ticket_id" value="2"/>
+        </insert>
+        <insert tableName="comment">
+            <column name="text" value="It is bad"/>
+            <column name="date" value="2022-04-04 12:01:03"/>
+            <column name="user_id" value="3"/>
+            <column name="ticket_id" value="3"/>
+        </insert>
+        <insert tableName="comment">
+            <column name="text" value="Okey"/>
+            <column name="date" value="2022-02-04 07:03:12"/>
+            <column name="user_id" value="5"/>
+            <column name="ticket_id" value="2"/>
+        </insert>
+        <insert tableName="comment">
+            <column name="text" value="Not good"/>
+            <column name="date" value="2022-04-01 10:03:52"/>
+            <column name="user_id" value="4"/>
+            <column name="ticket_id" value="5"/>
+        </insert>
+    </changeSet>
+</databaseChangeLog>
+
+

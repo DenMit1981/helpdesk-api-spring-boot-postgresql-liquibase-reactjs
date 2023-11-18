@@ -1,0 +1,52 @@
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.10.xsd">
+
+    <changeSet id="013-insert-users" author="denmit">
+        <insert tableName="users">
+            <column name="first_name" value="Den"/>
+            <column name="last_name" value="Mit"/>
+            <column name="role" value="ROLE_EMPLOYEE"/>
+            <column name="email" value="user1_mogilev@yopmail.com"/>
+            <column name="password" value="$2a$10$BtSb1vIX7synMgLIKximAeNZlpTAae4kZlZMR9xx7wxXZK2s0B4dC"/>
+        </insert>
+        <insert tableName="users">
+            <column name="first_name" value="Peter"/>
+            <column name="last_name" value="Bubu"/>
+            <column name="role" value="ROLE_EMPLOYEE"/>
+            <column name="email" value="user2_mogilev@yopmail.com"/>
+            <column name="password" value="$2a$10$BtSb1vIX7synMgLIKximAeNZlpTAae4kZlZMR9xx7wxXZK2s0B4dC"/>
+        </insert>
+        <insert tableName="users">
+            <column name="first_name" value="Asya"/>
+            <column name="last_name" value="Asyna"/>
+            <column name="role" value="ROLE_MANAGER"/>
+            <column name="email" value="manager1_mogilev@yopmail.com"/>
+            <column name="password" value="$2a$10$BtSb1vIX7synMgLIKximAeNZlpTAae4kZlZMR9xx7wxXZK2s0B4dC"/>
+        </insert>
+        <insert tableName="users">
+            <column name="first_name" value="Ivan"/>
+            <column name="last_name" value="Ivanov"/>
+            <column name="role" value="ROLE_MANAGER"/>
+            <column name="email" value="manager2_mogilev@yopmail.com"/>
+            <column name="password" value="$2a$10$BtSb1vIX7synMgLIKximAeNZlpTAae4kZlZMR9xx7wxXZK2s0B4dC"/>
+        </insert>
+        <insert tableName="users">
+            <column name="first_name" value="Inna"/>
+            <column name="last_name" value="Inina"/>
+            <column name="role" value="ROLE_ENGINEER"/>
+            <column name="email" value="engineer1_mogilev@yopmail.com"/>
+            <column name="password" value="$2a$10$BtSb1vIX7synMgLIKximAeNZlpTAae4kZlZMR9xx7wxXZK2s0B4dC"/>
+        </insert>
+        <insert tableName="users">
+            <column name="first_name" value="Roman"/>
+            <column name="last_name" value="Romin"/>
+            <column name="role" value="ROLE_ENGINEER"/>
+            <column name="email" value="engineer2_mogilev@yopmail.com"/>
+            <column name="password" value="$2a$10$BtSb1vIX7synMgLIKximAeNZlpTAae4kZlZMR9xx7wxXZK2s0B4dC"/>
+        </insert>
+    </changeSet>
+</databaseChangeLog>
+
+

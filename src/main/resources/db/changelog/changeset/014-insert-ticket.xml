@@ -1,0 +1,68 @@
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.10.xsd">
+
+    <changeSet id="014-insert-ticket" author="denmit">
+        <insert tableName="ticket">
+            <column name="name" value="task 1"/>
+            <column name="description" value="this is a ticket1"/>
+            <column name="created_on" value="2022-02-12"/>
+            <column name="desired_resolution_date" value="2022-03-12"/>
+            <column name="category" value="APPLICATION_AND_SERVICES"/>
+            <column name="status" value="NEW"/>
+            <column name="urgency" value="CRITICAL"/>
+            <column name="assignee_id" value="5"/>
+            <column name="approver_id" value="3"/>
+            <column name="owner_id" value="1"/>
+        </insert>
+        <insert tableName="ticket">
+            <column name="name" value="ticket 2"/>
+            <column name="description" value="Yes"/>
+            <column name="created_on" value="2022-01-14"/>
+            <column name="desired_resolution_date" value="2022-02-14"/>
+            <column name="category" value="BENEFITS_AND_PAPER_WORK"/>
+            <column name="status" value="DONE"/>
+            <column name="urgency" value="HIGH"/>
+            <column name="assignee_id" value="6"/>
+            <column name="approver_id" value="4"/>
+            <column name="owner_id" value="2"/>
+        </insert>
+        <insert tableName="ticket">
+            <column name="name" value="hard_task"/>
+            <column name="description" value="Ygggfgfgfg"/>
+            <column name="created_on" value="2022-02-15"/>
+            <column name="desired_resolution_date" value="2022-03-15"/>
+            <column name="category" value="HARDWARE_AND_SOFTWARE"/>
+            <column name="status" value="IN_PROGRESS"/>
+            <column name="urgency" value="LOW"/>
+            <column name="assignee_id" value="6"/>
+            <column name="approver_id" value="4"/>
+            <column name="owner_id" value="1"/>
+        </insert>
+        <insert tableName="ticket">
+            <column name="name" value="new task"/>
+            <column name="description" value="AAAAAAA!"/>
+            <column name="created_on" value="2022-03-15"/>
+            <column name="desired_resolution_date" value="2022-04-15"/>
+            <column name="category" value="PEOPLE_MANAGEMENT"/>
+            <column name="status" value="DONE"/>
+            <column name="urgency" value="AVERAGE"/>
+            <column name="assignee_id" value="5"/>
+            <column name="approver_id" value="3"/>
+            <column name="owner_id" value="4"/>
+        </insert>
+        <insert tableName="ticket">
+            <column name="name" value="ticket 5"/>
+            <column name="description" value="No interesting"/>
+            <column name="created_on" value="2022-03-12"/>
+            <column name="desired_resolution_date" value="2022-04-12"/>
+            <column name="category" value="SECURITY_AND_ACCESS"/>
+            <column name="status" value="APPROVED"/>
+            <column name="urgency" value="LOW"/>
+            <column name="assignee_id" value="6"/>
+            <column name="approver_id" value="4"/>
+            <column name="owner_id" value="5"/>
+        </insert>
+    </changeSet>
+</databaseChangeLog>
